@@ -1,0 +1,21 @@
+[{
+  "name": "customer1",
+  "country": "uk",
+  "address": "block 1, london street 1"
+},{
+  "name": "customer2",
+  "country": "uk",
+  "address": "block 2, london street 2"
+},{
+  "name": "customer3",
+  "country": "usa",
+  "address": "block 1, nyc street 1"
+},{
+  "name": "customer4",
+  "country": "usa",
+  "address": "block 2, nyc street 1"
+},{
+  "name": "customer5",
+  "country": "india",
+  "address": "block 1, delhi street 1"
+}]
