@@ -10,7 +10,10 @@ mongoose.connect(config.dbUrl, { useNewUrlParser: true, useUnifiedTopology: true
 const db = mongoose.connection
 
 db.on('error', (err) => console.log(err))
-db.once('open', () => console.log('Database connected...'))
+db.once('open', () => {
+    console.log('Database connected...')
+    refreshAll()
+})
 
 const refreshAll = async () => {
 
@@ -23,4 +26,3 @@ const refreshAll = async () => {
     await mongoose.disconnect();
 }
 
-refreshAll()
