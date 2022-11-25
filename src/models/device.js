@@ -9,6 +9,6 @@ const deviceSchema = new mongoose.Schema({
         type: String,
         required: true,
     }
-})
+}, { collection: 'device' })
 
 module.exports = mongoose.model('Device', deviceSchema);

@@ -17,6 +17,6 @@ const customersSchema = new mongoose.Schema({
         required: true,
         default: Date.now
     }
-})
+}, { collection: 'customer' })
 
-module.exports = mongoose.model('Customers', customersSchema);
+module.exports = mongoose.model('Customer', customersSchema);
